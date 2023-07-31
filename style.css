@@ -1,0 +1,447 @@
+/* Global styles */
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+/* Header styles */
+header {
+   background-color: #4789da;
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.site-title h1 {
+   font-size: 36px;
+   margin-bottom: 10px;
+}
+
+.subtitle {
+   font-size: 18px;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+.blog-center {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0 2rem;
+ }
+ 
+ .blog-box {
+   width: 100%;
+   box-shadow: 0 0 3px rgba(60, 72, 88, .8);
+ }
+ 
+ .image-container {
+   height: 25rem;
+ }
+ 
+ 
+ .image-container img {
+   object-fit: cover;
+   height: 25rem;
+ }
+ 
+ /* General styles */
+.section.blog {
+   padding: 4rem 0;
+ }
+ 
+ .blog-center {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+ }
+ 
+ .blog-box {
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   overflow: hidden;
+ }
+ 
+ .blog-box .content {
+   padding: 2rem;
+ }
+ 
+ .blog-box .content h4 {
+   font-weight: 500;
+   font-size: 1.7rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .blog-box .content p {
+   color: #222;
+   margin-bottom: 1rem;
+ }
+ 
+ .blog-box a:link,
+ .blog-box a:visited {
+   display: inline-block;
+   padding: .7rem 1.5rem;
+   color: var(--customColor);
+   border: 2px solid var(--customColor);
+   border-radius: 4px;
+   text-decoration: none;
+   transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .blog-box a:hover {
+   background-color: var(--customColor);
+   color: #fff;
+ }
+ 
+ /* Media Queries */
+ @media only screen and (max-width: 768px) {
+   .blog-center {
+     grid-template-columns: repeat(2, 1fr);
+     gap: 2rem;
+   }
+ }
+ 
+ @media only screen and (max-width: 567px) {
+   .blog-center {
+     grid-template-columns: 1fr;
+     gap: 2rem;
+   }
+ }
+ 
+ 
+
+ 
+/* Main content styles */
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.article-recent {
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding: 20px;
+   margin-bottom: 20px;
+   flex-basis: calc(50% - 30px);
+}
+
+.article-recent-main {
+   margin-bottom: 20px;
+}
+
+.article-title {
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+.article-read-more {
+   display: inline-block;
+   background-color: #4CAF50;
+   color: #fff;
+   text-decoration: none;
+   padding: 8px 16px;
+   border-radius: 5px;
+}
+
+.article-read-more:hover {
+   background-color: #45a049;
+}
+
+.article-image {
+   width: 100%;
+   border-radius: 5px;
+}
+
+.article-info {
+   color: #777;
+}
+
+/* Sidebar styles */
+.sidebar {
+   flex-basis: calc(25% - 30px);
+}
+
+.widget-title {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.widget-body {
+   color: #777;
+}
+
+.widget-image {
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.widget-recent-post {
+   margin-bottom: 10px;
+}
+
+.widget-recent-post-title {
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+
+/* Footer styles */
+footer {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+}
+
+footer p {
+   margin: 5px 0;
+}
+
+/* Additional styles */
+.article-body {
+   color: #444;
+}
+
+.widget-recent-post img {
+   max-width: 60px;
+   border-radius: 5px;
+}
+/* Colorful Buttons */
+.article-read-more {
+   /* Existing styles */
+   background-color: #4CAF50;
+   color: #fff;
+   /* New styles */
+   transition: background-color 0.3s ease;
+}
+
+.article-read-more:hover {
+   background-color: #45a049;
+}
+
+/* Add a new button style */
+.button-primary {
+   background-color: #FF5722;
+   color: #fff;
+   padding: 8px 16px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+   background-color: #E64A19;
+}
+
+/* Update the "CONTINUE READING" button with the new style */
+
+/* Add "View More" button after recent posts list in the sidebar */
+.view-more-button {
+   display: block;
+   margin-top: 20px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+   .article-recent {
+       flex-basis: 100%;
+   }
+
+   .sidebar {
+       flex-basis: 100%;
+       margin-top: 20px;
+   }
+
+   /* Center align the social media links on smaller screens */
+   .social-links {
+       text-align: center;
+   }
+
+   /* Adjust font sizes for better mobile readability */
+   .site-title h1 {
+       font-size: 28px;
+   }
+
+   .subtitle {
+       font-size: 16px;
+   }
+
+   .article-title {
+       font-size: 20px;
+   }
+
+   .widget-title {
+       font-size: 18px;
+   }
+}
+/* Sidebar styles */
+.sidebar {
+   flex-basis: calc(25% - 30px);
+   margin-top: 20px;
+}
+
+.widget-title {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.widget-body {
+   color: #777;
+}
+
+.widget-image {
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.widget-recent-post {
+   margin-bottom: 10px;
+}
+
+.widget-recent-post-title {
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+
+/* Social Media Links */
+.social-links {
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+}
+
+.social-icon {
+   color: #555;
+   font-size: 24px;
+   margin: 0 8px;
+   transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+   color: #4CAF50;
+}
+
+/* View More Button */
+.button-primary {
+   background-color: #FF5722;
+   color: #fff;
+   padding: 8px 16px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   display: block;
+   margin-top: 20px;
+}
+
+.button-primary:hover {
+   background-color: #E64A19;
+}
+
+.view-more-button {
+   display: block;
+}
+
+/* Additional styles for the Contact Form */
+.sidebar form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.sidebar input,
+.sidebar textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.sidebar textarea {
+   resize: vertical;
+}
+
+.sidebar button {
+   width: 100%;
+   padding: 10px;
+   background-color: #FF5722;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+   background-color: #E64A19;
+}
+/* Styles for the standard contact form */
+.standard-contact form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.standard-contact input,
+.standard-contact textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.standard-contact textarea {
+   resize: vertical;
+}
+
+.standard-contact button {
+   width: 100%;
+   padding: 10px;
+   background-color: #FF5722;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.standard-contact button:hover {
+   background-color: #E64A19;
+}
+
+
+
+
